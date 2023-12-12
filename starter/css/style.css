@@ -1,0 +1,204 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ee2f2f;
+  color: #ffffff;
+}
+
+.menu {
+width: 60%;
+
+}
+
+.menulist {
+  list-style-type: none;
+  display: flex;
+  width:100%;
+  justify-content: space-around;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.hero {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/Hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 10px;
+}
+
+.subtitle {
+  background-color: #ee2f2f;
+  color: #ffffff;
+  width: 25%; 
+  font-size: 15px;
+  padding: 20px;
+  
+}
+
+.heading {
+font-size: 30px;
+word-wrap:break-word;
+}
+
+
+
+.menu a {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+p {
+  font-size: 16px;
+}
+
+section {
+  padding: 2rem 3rem;
+}
+
+#about{
+  display:flex;
+
+}
+
+#work {
+  display: flex;
+}
+
+.right {
+  width: 85%;
+}
+
+.left {
+  width: 15%;
+  word-wrap: break-word;
+  position:relative;
+}
+
+.left::before {
+  content: "";
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  width: 3px;
+  background-color: #ee2f2f;
+  
+}
+
+.imagebox {
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 20px;
+  position: relative;
+  height: 40vh;
+  border: 7px solid #ee2f2f;
+}
+
+.imagebox::before {
+  content: "";
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all .3s ease-in-out;
+  background-color: rgba(0,0,0,0.5);
+}
+.imagebox:hover::before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0);
+}
+
+.imagebox#work1 {
+  background-image: url("../images/02-portfolio-1.jpg") ;
+  background-size: cover;
+  background-position: center center;
+}
+
+.imagebox#work2 {
+  background-image: url("../images/02-portfolio-2.jpg") ;
+  background-size: cover;
+  background-position: center center;
+}
+
+.imagebox#work3 {
+  background-image: url("../images/02-portfolio-3.jpg") ;
+  background-size: cover;
+  background-position: center center;
+}
+
+.imagebox#work4 {
+  background-image: url("../images/02-run-buddy.jpg") ;
+  background-size: cover;
+  background-position: center center;
+}
+
+.imagebox#work5 {
+  background-image: url("../images/02-portfolio-2.jpg") ;
+  background-size: cover;
+  background-position: center center;
+}
+
+.imagedescription {
+  display: inline-block;
+  padding: 20px;
+  background-color: #ee2f2f;
+  color:white;
+  position:absolute;
+  bottom: 30px;
+}
+
+.fullwidth {
+  display:flex;
+  gap: 10px;
+}
+
+.halfwidth {
+  width:50%;
+}
+
+.imagebox#work2, .imagebox#work3, .imagebox#work4, .imagebox#work5 {
+  height: 20vh;
+}
+
+.contact {
+  display: flex;
+}
+
+.contactmenu {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  list-style-type: none;
+}
+
+.contact a {
+  color: #ee2f2f;
+  font-size: 25px;
+}
