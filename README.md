@@ -1,5 +1,4 @@
 # Edxchallenge2
-A simple Portfolio Webpage
 
 ## User Story
 As a developer, I want poeplee to be
